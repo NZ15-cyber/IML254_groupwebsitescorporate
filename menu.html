@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu | RAHMAH Wedding Catering</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background-color: #9d8361; 
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto 4rem auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 3rem 4rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            font-family: Georgia, serif;
+            color: #3a3a3a;
+            line-height: 1.7;
+            font-size: 1.15rem;
+        }
+
+        main h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: #994d47;
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        main h3 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #6b4c2a;
+            border-bottom: 3px solid #a0522d;
+            padding-bottom: 0.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        main p {
+            margin-bottom: 2rem;
+            color: #4a4a4a;
+            font-style: normal;
+        }
+
+        main ul {
+            list-style: none;
+            padding-left: 0;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+        }
+
+        main ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 1.2em;
+            font-size: 1.12rem;
+            color: #7a6b42;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        main ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #a0522d;
+            font-size: 1.4rem;
+            font-weight: 900;
+            user-select: none;
+        }
+
+        .menu-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .menu-section img {
+            width: 250px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            flex-shrink: 0;
+        }
+
+        .menu-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        @media (max-width: 700px) {
+            .menu-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-section img {
+                width: 100%;
+                height: auto;
+            }
+            .menu-content {
+                min-width: 100%;
+            }
+        }
+
+        .note {
+            font-weight: 700;
+            font-style: italic;
+            color: #a0522d;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RAHMAH Wedding Catering</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="events.html">Events</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="group.html">Group</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Our Wedding Menu – Flavourful, Halal & Affordable</h2>
+        <p>
+            We take great delight in creating a wedding menu that is both inexpensive and wonderfully memorable. 
+            At RAHMAH Wedding Catering, we serve authentic Malaysian dishes that satisfy every generation from classic kampung flavors to modern twists. 
+            Each dish is cooked fresh, halal-certified and presented beautifully to impress your guests and honor your special day.
+        </p>
+
+        <section class="menu-section">
+            <img src="nasi.jpg" alt="Main Dishes" />
+            <div class="menu-content">
+                <h3>🍚 Main Dishes</h3>
+                <ul>
+                    <li><strong>Nasi Minyak:</strong> Fragrant rice cooked with ghee, spices & raisins – a wedding must-have.</li>
+                    <li><strong>Nasi Putih / Biryani / Tomato:</strong> Additional rice options available to suit your theme or request.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <img src="lauk.jpg" alt="Meat and Poultry" />
+            <div class="menu-content">
+                <h3>🍗 Meat & Poultry</h3>
+                <ul>
+                    <li><strong>Ayam Masak Merah:</strong> Tender chicken in sweet and spicy tomato-based gravy.</li>
+                    <li><strong>Ayam Kurma:</strong> Creamy, mild coconut curry with herbs and spices.</li>
+                    <li><strong>Daging Masak Hitam:</strong> Dark, caramelized beef with rich, bold flavor.</li>
+                    <li><strong>Rendang Daging / Ayam:</strong> Traditional dry-style rendang for a festive touch.</li>
+                    <li><strong>Kambing Golek (Premium):</strong> Roasted whole lamb with mint sauce — our signature dish.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <img src="acar.jpg" alt="Vegetables and Sides" />
+            <div class="menu-content">
+                <h3>🥬 Vegetables & Sides</h3>
+                <ul>
+                    <li><strong>Dalca Sayur:</strong> Thick dhal curry with mixed vegetables and potatoes.</li>
+                    <li><strong>Acar Timun:</strong> Pickled cucumber salad to balance rich dishes.</li>
+                    <li><strong>Sayur Campur:</strong> Mixed sautéed vegetables, a healthy and colorful addition.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <img src="drinks.jpg" alt="Drinks and Beverages" />
+            <div class="menu-content">
+                <h3>🥤 Drinks & Beverages</h3>
+                <ul>
+                    <li>Sirap Bandung</li>
+                    <li>Orange Cordial</li>
+                    <li>Iced Lemon Tea / Hot Coffee & Tea (Standard & Premium)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <img src="dessert.jpg" alt="Desserts" />
+            <div class="menu-content">
+                <h3>🍰 Desserts</h3>
+                <ul>
+                    <li>Assorted traditional kuih (Kuih Seri Muka, Kuih Lapis, Kuih Cara)</li>
+                    <li>Fresh fruit platters (watermelon, pineapple, honeydew)</li>
+                    <li>Agar-agar, bubur, or mini cakes (optional add-on)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <img src="stall.jpg" alt="Live Cooking Stations" />
+            <div class="menu-content">
+                <h3>🔥 (Add-on)</h3>
+                <ul>
+                    <li>Satay with peanut sauce</li>
+                    <li>Teh Tarik / Kopi Kampung</li>
+                    <li>Char Kuey Teow or Roti John corner</li>
+                </ul>
+            </div>
+        </section>
+
+        <h3>🍽️ Portion & Serving Notes</h3>
+        <p>
+            We provide generous portions with each package, calculated based on your guest count. 
+            Extra food can be arranged upon request. All food is delivered hot, fresh and in proper serving trays or dome sets. 
+            Buffet tables are decorated with skirting and warmers and our staff ensures consistent food flow throughout the event.
+        </p>
+
+        <p class="note"><strong>Don’t see your favorite dish?</strong> Let us know — we’re happy to customize based on your family’s taste or theme.</p>
+    </main>
+    <footer>
+        <p>&copy; “This website is not the official website of Rahmah Wedding Catering. It was developed solely for educational purposes under the IML254 course at Universiti Teknologi MARA.”</p>
+    </footer>
+</body>
+</html>
+
+ 
