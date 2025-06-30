@@ -45,57 +45,7 @@
     <p>&copy; “This website is not the official website of Rahmah Wedding Catering. It was developed solely for educational purposes under the IML254 course at Universiti Teknologi MARA.”</p>
   </footer>
   <script>
-    const stars = document.querySelectorAll(".star-rating .star");
-    const starValue = document.getElementById("starValue");
-
-    stars.forEach((star, index) => {
-      star.addEventListener("click", () => {
-        const rating = star.getAttribute("data-value");
-        starValue.value = rating;
-
-        stars.forEach(s => {
-          s.classList.remove("selected");
-          s.setAttribute("aria-checked", "false");
-          s.tabIndex = -1;
-        });
-
-        star.classList.add("selected");
-        star.setAttribute("aria-checked", "true");
-        star.tabIndex = 0;
-
-        // Select all previous siblings (stars with higher data-value)
-        let previous = star.previousElementSibling;
-        while (previous) {
-          previous.classList.add("selected");
-          previous.setAttribute("aria-checked", "true");
-          previous.tabIndex = 0;
-          previous = previous.previousElementSibling;
-        }
-      });
-
-      // Keyboard accessibility: select star on Enter or Space key
-      star.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          star.click();
-        }
-        // Allow arrow keys to navigate stars
-        else if (e.key === "ArrowLeft") {
-          e.preventDefault();
-          if (index < stars.length - 1) stars[index + 1].focus();
-        }
-        else if (e.key === "ArrowRight") {
-          e.preventDefault();
-          if (index > 0) stars[index - 1].focus();
-        }
-      });
-    });
-
-    function submitRating() {
-      if (!starValue.value) {
-        alert("Please select a star rating!");
-        return false;
-      }
+    
       alert("Thank you for your feedback and rating!");
       return false; // prevent real submission for demo
     }
