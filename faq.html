@@ -5,9 +5,49 @@
     <meta charset="UTF-8">
     <title>Frequently Asked Questions | RAHMAH Wedding Catering</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .faq-card {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        animation: fadeInUp 1s ease forwards;
+        opacity: 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .faq-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      }
+
+      h2 {
+        text-align: center;
+        color: #994d47;
+        animation: fadeInUp 1s ease forwards;
+        opacity: 0;
+      }
+
+      main > p {
+        text-align: center;
+        animation: fadeInUp 1s ease forwards;
+        opacity: 0;
+      }
+
+      h3 {
+        margin-top: 0;
+        color: #994d47;
+      }
+    </style>
 </head>
 <body>
-    <header>
+    <header style="position: fixed; top: 0; width: 100%; z-index: 1000; background: #994d47;">
         <h1>RAHMAH Wedding Catering</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -28,82 +68,69 @@
             <a href="feedback.html">Feedback</a>
         </nav>
     </header>
-    <main>
- 	<h2>Frequently Asked Questions</h2>
-<p>
-We know that planning a wedding comes with many questions. Below, we’ve answered the most common ones to help you make informed, confident decisions. 
-If you don’t see your question here, feel free to <a href="contact.html">contact us directly</a> — we’re happy to assist!
-</p>
+    <main style="margin-top: 200px;">
+ 	    <h2>Frequently Asked Questions</h2>
+        <p>
+            We know that planning a wedding comes with many questions. Below, we’ve answered the most common ones to help you make informed, confident decisions. 
+            If you don’t see your question here, feel free to <a href="contact.html">contact us directly</a> — we’re happy to assist!
+        </p>
 
-<h3>1. What is the price range for your catering packages?</h3>
-<p>
-Our packages start from RM12 per guest for the Basic Package, RM18 for Standard, and RM25 for Premium. 
-We also offer custom pricing based on your event needs, guest count, and menu selection. 
-There are no hidden fees — all prices include setup, staff, and serving equipment.
-</p>
+        <div class="faq-card">
+            <h3>❓ What is the price range for your catering packages?</h3>
+            <p>Our packages start from RM12 per guest for Basic, RM18 for Standard, and RM25 for Premium. We also offer custom pricing based on your needs. No hidden fees — all prices include setup, staff, and equipment.</p>
+        </div>
 
-<h3>2. How early should I book?</h3>
-<p>
-We recommend booking at least 1–3 months in advance, especially for weekend weddings or during peak seasons. 
-However, we do accept last-minute bookings (minimum 2 weeks notice) depending on availability.
-</p>
+        <div class="faq-card">
+            <h3>📅 How early should I book?</h3>
+            <p>We recommend at least 1–3 months in advance, especially for weekends. We do accept last-minute bookings (minimum 2 weeks) depending on availability.</p>
+        </div>
 
-<h3>3. Can I customize the menu?</h3>
-<p>
-Yes! All our menus can be tailored to your taste and preferences. 
-You can mix and match dishes, request vegetarian or allergy-friendly options, or add signature family dishes. 
-We’re here to make your wedding meal feel personal and meaningful.
-</p>
+        <div class="faq-card">
+            <h3>👨‍🍳 Can I customize the menu?</h3>
+            <p>Yes! You can mix dishes, request vegetarian or allergy-friendly options, or include family recipes. We want your wedding meal to feel personal and special.</p>
+        </div>
 
-<h3>4. Is your food 100% halal?</h3>
-<p>
-Absolutely. All our ingredients are sourced from halal-certified suppliers, and we follow strict hygiene and preparation practices. 
-We’re committed to serving meals that all your guests can enjoy with confidence.
-</p>
+        <div class="faq-card">
+            <h3>✅ Is your food 100% halal?</h3>
+            <p>Absolutely. We only use halal-certified suppliers and follow strict hygiene and preparation practices so all guests can enjoy with confidence.</p>
+        </div>
 
-<h3>5. Do you provide a food tasting session?</h3>
-<p>
-Yes, we provide complimentary food tasting for 2 people for couples who book the Premium Package. 
-For other packages, a small tasting fee may apply — which can be waived if you confirm your booking with us.
-</p>
+        <div class="faq-card">
+            <h3>🍽️ Do you provide a food tasting session?</h3>
+            <p>Yes! Complimentary tasting for 2 people with the Premium Package. For other packages, a small tasting fee applies — waived upon booking confirmation.</p>
+        </div>
 
-<h3>6. What’s included in the package?</h3>
-<p>
-All packages include food, buffet setup, serving trays or dome sets, staff, drinks, basic table skirting, and delivery within our service area. 
-Higher-tier packages also include decorations, VIP tables, and additional services like live cooking stations and waiter service.
-</p>
+        <div class="faq-card">
+            <h3>🎉 What’s included in the package?</h3>
+            <p>All packages include food, setup, trays or dome sets, staff, drinks, basic skirting, and delivery. Premium packages include VIP tables, decor, and live cooking stations.</p>
+        </div>
 
-<h3>7. Can I request extra food or a second round?</h3>
-<p>
-Yes! We offer top-up portions or refill service depending on the package. 
-Let us know in advance if you expect a larger crowd or want to provide take-home containers for guests.
-</p>
+        <div class="faq-card">
+            <h3>➕ Can I request extra food or a second round?</h3>
+            <p>Yes! We offer top-up portions and refills depending on your package. Let us know in advance if you expect a larger crowd or want take-home options.</p>
+        </div>
 
-<h3>8. What happens in case of cancellation?</h3>
-<p>
-We understand plans can change. A refund policy applies based on how early the cancellation is made. 
-Generally, deposits are non-refundable but transferable to future dates (subject to availability).
-</p>
+        <div class="faq-card">
+            <h3>🔄 What happens in case of cancellation?</h3>
+            <p>Deposits are non-refundable but can be transferred to a future date (subject to availability). Refunds depend on how early you cancel.</p>
+        </div>
 
-<h3>9. Do you cover areas outside Kedah?</h3>
-<p>
-Yes, we cater to most parts of Kedah and nearby states depending on the scale of the event and package selected. 
-Transport charges may apply for distant locations. Feel free to check with us!
-</p>
+        <div class="faq-card">
+            <h3>🗺️ Do you cover areas outside Kedah?</h3>
+            <p>Yes, we cater to most parts of Kedah and nearby states depending on event scale. Transport charges may apply — just ask us!</p>
+        </div>
 
-<h3>10. How do I confirm a booking?</h3>
-<p>
-You can fill out our <a href="booking.html">booking form</a> or contact us directly. 
-A 30% deposit is required to confirm your date, and the remaining balance is due 3–5 days before the event. 
-Once confirmed, we’ll send you a formal agreement and planning checklist.
-</p>
+        <div class="faq-card">
+            <h3>✅ How do I confirm a booking?</h3>
+            <p>Fill out our <a href="booking.html">booking form</a> or contact us directly. A 30% deposit secures your date, and the remaining balance is due 3–5 days before. We’ll provide a formal agreement and checklist after confirmation.</p>
+        </div>
 
-<p><strong>Still unsure? Reach out to our friendly team — we’re happy to help you plan a delicious, smooth, and affordable wedding experience.</strong></p>
-
+        <p><strong>Still unsure? Reach out to our friendly team — we’re happy to help you plan a delicious, smooth, and memorable wedding experience!</strong></p>
     </main>
     <footer>
         <p>&copy; This website is not the official website of Rahmah Wedding Catering. It was developed solely for educational purposes under the IML254 course at 
-           Universiti Teknologi MARA</p>
+           Universiti Teknologi MARA.</p>
     </footer>
 </body>
 </html>
+
