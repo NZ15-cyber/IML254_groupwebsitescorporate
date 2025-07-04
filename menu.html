@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu | RAHMAH Wedding Catering</title>
+    <title>Packages | RAHMAH Wedding Catering</title>
     <link rel="stylesheet" href="style.css" />
     <style>
         body {
-            background-color: #9d8361; 
+            background-color: #9d8361;
         }
 
         main {
@@ -47,27 +47,27 @@
         main p {
             margin-bottom: 2rem;
             color: #4a4a4a;
-            font-style: normal;
         }
 
-        main ul {
+        .package {
+            margin-bottom: 3rem;
+        }
+
+        ul {
             list-style: none;
             padding-left: 0;
-            max-width: 700px;
-            margin: 0 auto 3rem auto;
         }
 
-        main ul li {
+        ul li {
             position: relative;
             padding-left: 30px;
             margin-bottom: 1.2em;
             font-size: 1.12rem;
             color: #7a6b42;
             font-weight: 600;
-            line-height: 1.5;
         }
 
-        main ul li::before {
+        ul li::before {
             content: "•";
             position: absolute;
             left: 0;
@@ -76,43 +76,6 @@
             color: #a0522d;
             font-size: 1.4rem;
             font-weight: 900;
-            user-select: none;
-        }
-
-        .menu-section {
-            display: flex;
-            align-items: flex-start;
-            gap: 2rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .menu-section img {
-            width: 250px;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            flex-shrink: 0;
-        }
-
-        .menu-content {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        @media (max-width: 700px) {
-            .menu-section {
-                flex-direction: column;
-                align-items: center;
-            }
-            .menu-section img {
-                width: 100%;
-                height: auto;
-            }
-            .menu-content {
-                min-width: 100%;
-            }
         }
 
         .note {
@@ -121,6 +84,12 @@
             color: #a0522d;
             margin-top: 2rem;
             text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                padding: 2rem;
+            }
         }
     </style>
 </head>
@@ -147,99 +116,67 @@
         </nav>
     </header>
     <main>
-        <h2>Our Wedding Menu – Flavourful, Halal & Affordable</h2>
+        <h2>Wedding Catering Packages</h2>
         <p>
-            We take great delight in creating a wedding menu that is both inexpensive and wonderfully memorable. 
-            At RAHMAH Wedding Catering, we serve authentic Malaysian dishes that satisfy every generation from classic kampung flavors to modern twists. 
-            Each dish is cooked fresh, halal-certified and presented beautifully to impress your guests and honor your special day.
+            Choose from our thoughtfully crafted catering packages — all halal-certified and made fresh for your special day.
+            Each package is designed to cater different budgets and guest experiences.
         </p>
 
-        <section class="menu-section">
-            <img src="nasi.jpg" alt="Main Dishes" />
-            <div class="menu-content">
-                <h3>🍚 Main Dishes</h3>
-                <ul>
-                    <li><strong>Nasi Minyak:</strong> Fragrant rice cooked with ghee, spices & raisins – a wedding must-have.</li>
-                    <li><strong>Nasi Putih / Biryani / Tomato:</strong> Additional rice options available to suit your theme or request.</li>
-                </ul>
-            </div>
+        <!-- Silver Package -->
+        <section class="package">
+            <h3>💍 Silver Package</h3>
+            <ul>
+                <li>Nasi Minyak</li>
+                <li>Ayam Masak Merah</li>
+                <li>Daging Masak Hitam</li>
+                <li>Dalca Sayur</li>
+                <li>Acar Timun</li>
+                <li>Sirap Bandung / Orange Cordial</li>
+                <li>Traditional Kuih & Fruit Platters</li>
+            </ul>
         </section>
 
-        <section class="menu-section">
-            <img src="lauk.jpg" alt="Meat and Poultry" />
-            <div class="menu-content">
-                <h3>🍗 Meat & Poultry</h3>
-                <ul>
-                    <li><strong>Ayam Masak Merah:</strong> Tender chicken in sweet and spicy tomato-based gravy.</li>
-                    <li><strong>Ayam Kurma:</strong> Creamy, mild coconut curry with herbs and spices.</li>
-                    <li><strong>Daging Masak Hitam:</strong> Dark, caramelized beef with rich, bold flavor.</li>
-                    <li><strong>Rendang Daging / Ayam:</strong> Traditional dry-style rendang for a festive touch.</li>
-                    <li><strong>Kambing Golek (Premium):</strong> Roasted whole lamb with mint sauce — our signature dish.</li>
-                </ul>
-            </div>
+        <!-- Gold Package -->
+        <section class="package">
+            <h3>👑 Gold Package</h3>
+            <ul>
+                <li>Choice of Nasi Minyak / Biryani / Tomato Rice</li>
+                <li>Ayam Kurma</li>
+                <li>Rendang Daging</li>
+                <li>Sayur Campur</li>
+                <li>Dalca Sayur</li>
+                <li>Iced Lemon Tea / Hot Coffee & Tea</li>
+                <li>Kuih, Fruit Platters, Agar-Agar</li>
+                <li>Add-on: Satay & Peanut Sauce (Optional)</li>
+            </ul>
         </section>
 
-        <section class="menu-section">
-            <img src="acar.jpg" alt="Vegetables and Sides" />
-            <div class="menu-content">
-                <h3>🥬 Vegetables & Sides</h3>
-                <ul>
-                    <li><strong>Dalca Sayur:</strong> Thick dhal curry with mixed vegetables and potatoes.</li>
-                    <li><strong>Acar Timun:</strong> Pickled cucumber salad to balance rich dishes.</li>
-                    <li><strong>Sayur Campur:</strong> Mixed sautéed vegetables, a healthy and colorful addition.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="menu-section">
-            <img src="drinks.jpg" alt="Drinks and Beverages" />
-            <div class="menu-content">
-                <h3>🥤 Drinks & Beverages</h3>
-                <ul>
-                    <li>Sirap Bandung</li>
-                    <li>Orange Cordial</li>
-                    <li>Iced Lemon Tea / Hot Coffee & Tea (Standard & Premium)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="menu-section">
-            <img src="dessert.jpg" alt="Desserts" />
-            <div class="menu-content">
-                <h3>🍰 Desserts</h3>
-                <ul>
-                    <li>Assorted traditional kuih (Kuih Seri Muka, Kuih Lapis, Kuih Cara)</li>
-                    <li>Fresh fruit platters (watermelon, pineapple, honeydew)</li>
-                    <li>Agar-agar, bubur, or mini cakes (optional add-on)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="menu-section">
-            <img src="stall.jpg" alt="Live Cooking Stations" />
-            <div class="menu-content">
-                <h3>🔥 (Add-on)</h3>
-                <ul>
-                    <li>Satay with peanut sauce</li>
-                    <li>Teh Tarik / Kopi Kampung</li>
-                    <li>Char Kuey Teow or Roti John corner</li>
-                </ul>
-            </div>
+        <!-- Platinum Package -->
+        <section class="package">
+            <h3>✨ Platinum Package</h3>
+            <ul>
+                <li>Nasi Minyak & Tomato Rice</li>
+                <li>Kambing Golek (Signature Roasted Lamb)</li>
+                <li>Ayam Masak Merah & Rendang Ayam</li>
+                <li>Sayur Campur & Dalca Sayur</li>
+                <li>Acar Timun</li>
+                <li>Iced Lemon Tea, Teh Tarik, Hot Beverages</li>
+                <li>Assorted Kuih, Bubur, Mini Cakes, Fresh Fruit Platters</li>
+                <li>Live Cooking Stations: Char Kuey Teow, Roti John</li>
+            </ul>
         </section>
 
         <h3>🍽️ Portion & Serving Notes</h3>
         <p>
-            We provide generous portions with each package, calculated based on your guest count. 
-            Extra food can be arranged upon request. All food is delivered hot, fresh and in proper serving trays or dome sets. 
-            Buffet tables are decorated with skirting and warmers and our staff ensures consistent food flow throughout the event.
+            All packages come with generous portions calculated to match your guest count. 
+            Our catering includes buffet setup with skirting, warmers, and serving staff. 
+            We ensure timely refills and beautiful presentation throughout your event.
         </p>
 
-        <p class="note"><strong>Don’t see your favorite dish?</strong> Let us know — we’re happy to customize based on your family’s taste or theme.</p>
+        <p class="note"><strong>Need something special?</strong> Custom menus are available. Let us match your taste, culture, or wedding theme!</p>
     </main>
     <footer>
         <p>&copy; “This website is not the official website of Rahmah Wedding Catering. It was developed solely for educational purposes under the IML254 course at Universiti Teknologi MARA.”</p>
     </footer>
 </body>
 </html>
-
- 
